@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Amer Alwahsh | Full Stack Developer">
+    <meta name="description" content="Professional portfolio for Full Stack Developer Amer Alwahsh. Expert in React, Node.js, and modern web solutions.">
+    <meta name="keywords" content="Amer Alwahsh, Full Stack Developer, Web Developer Jordan, React Developer, Node.js, Software Engineer, عامر الوحش, مبرمج, تطوير مواقع">
+    <meta name="author" content="Amer Alwahsh">
+    <meta name="robots" content="index, follow">
+
+    <title>Amer Alwahsh | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0f172a', // Slate 900
+              secondary: '#1e293b', // Slate 800
+              accent: '#f59e0b', // Amber 500
+              'accent-hover': '#d97706', // Amber 600
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for chat */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+
+</head>
+  <body class="bg-primary text-slate-200 font-sans selection:bg-accent selection:text-primary">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
