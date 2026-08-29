@@ -3,7 +3,8 @@ import { ChatMessage } from "../types";
 import { FORMSPREE_ENDPOINT } from "../constants";
 
 // Initialize Gemini Client
-const ai = new GoogleGenAI({ apiKey: "AIzaSyC6UGXsiGTUEl_hVvbRNmh4G1mPxrdnzhw" });
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const ai = new GoogleGenAI({ apiKey: API_KEY });
 
 const RAAD_SYSTEM_INSTRUCTION = `
 أنت "رعد" (Raad)، مساعد ذكي وتفاعلي في الموقع الشخصي للمبرمج "المهندس عامر الوحش" (Engineer Amer Al-Wahsh).

@@ -38,6 +38,15 @@ export const PROJECTS_DATA = {
   ar: [
     {
       id: 1,
+      title: "منصة وإدارة نادي KILLZER للفنون القتالية",
+      description: "منصة ويب سحابية متكاملة لإدارة الأكاديميات الرياضية، تشمل واجهة تفاعلية مع لوحات تحكم مخصصة للإدارة، المدربين، واللاعبين، مع نظام إدارة الاشتراكات والحضور وقواعد بيانات فورية على Firebase.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Firestore", "Framer Motion"],
+      imageUrl: "https://image.thum.io/get/width/800/crop/500/noanimate/https://killzer.com/",
+      demoUrl: "https://killzer.com/",
+      repoUrl: "https://github.com/Amer-07/killzer-fight-club-web"
+    },
+    {
+      id: 2,
       title: "تصميم واجهة ويب متكاملة",
       description: "مشروع تطبيقي يبرز مهاراتي في تحويل التصاميم إلى صفحات ويب تفاعلية باستخدام تقنيات CSS الحديثة. يتضمن المشروع أقساماً متعددة مثل معرض الأعمال، جداول الأسعار، ونماذج التواصل، مع الالتزام التام بمعايير الويب القياسية وهيكلة الكود البرمجي الصحيحة.",
       tags: ["HTML", "CSS"],
@@ -49,6 +58,15 @@ export const PROJECTS_DATA = {
   en: [
     {
       id: 1,
+      title: "KILLZER Fight Club Web App",
+      description: "A full-featured cloud web platform for martial arts academy management. Features a public landing page, interactive Admin, Coach, and Player dashboards with real-time Firebase Firestore, subscription tracking, and attendance management.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Firestore", "Framer Motion"],
+      imageUrl: "https://image.thum.io/get/width/800/crop/500/noanimate/https://killzer.com/",
+      demoUrl: "https://killzer.com/",
+      repoUrl: "https://github.com/Amer-07/killzer-fight-club-web"
+    },
+    {
+      id: 2,
       title: "Full Web Interface Design",
       description: "A practical project highlighting my skills in converting designs into interactive web pages using modern CSS techniques. It features multiple sections like portfolio, pricing tables, and contact forms, with full adherence to web standards and proper semantic HTML structure.",
       tags: ["HTML", "CSS"],

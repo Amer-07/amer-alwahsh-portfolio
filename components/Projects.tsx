@@ -22,20 +22,24 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <Reveal key={project.id} delay={index * 0.15} width="100%">
               <div className="group bg-primary rounded-xl overflow-hidden border border-slate-800 hover:border-accent/50 transition-all duration-300 flex flex-col h-full hover:shadow-2xl hover:shadow-accent/5">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden bg-slate-900">
                   <img 
-                      src={project.imageUrl} 
-                      alt={project.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src={project.imageUrl} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = `https://placehold.co/600x400/1e293b/f59e0b?text=${encodeURIComponent(project.title)}`;
+                    }}
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     {project.demoUrl && (
-                      <a href={project.demoUrl} className="p-2 bg-accent text-primary rounded-full hover:bg-white transition-colors transform hover:scale-110" title="Live Demo">
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="p-2 bg-accent text-primary rounded-full hover:bg-white transition-colors transform hover:scale-110" title="Live Demo">
                         <ExternalLink className="w-5 h-5" />
                       </a>
                     )}
                     {project.repoUrl && (
-                      <a href={project.repoUrl} className="p-2 bg-secondary text-white rounded-full hover:bg-white hover:text-primary transition-colors transform hover:scale-110" title="View Code">
+                      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="p-2 bg-secondary text-white rounded-full hover:bg-white hover:text-primary transition-colors transform hover:scale-110" title="View Code">
                         <Github className="w-5 h-5" />
                       </a>
                     )}
