@@ -41,7 +41,7 @@ export const PROJECTS_DATA = {
       title: "منصة وإدارة نادي KILLZER للفنون القتالية",
       description: "منصة ويب سحابية متكاملة لإدارة الأكاديميات الرياضية، تشمل واجهة تفاعلية مع لوحات تحكم مخصصة للإدارة، المدربين، واللاعبين، مع نظام إدارة الاشتراكات والحضور وقواعد بيانات فورية على Firebase.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Firestore", "Framer Motion"],
-      imageUrl: "/img/killzer_logo.png",
+      imageUrl: "/img/killzer_screenshot.jpg",
       demoUrl: "https://killzer.com/",
       repoUrl: "https://github.com/Amer-07/killzer-fight-club-web"
     },
@@ -61,7 +61,7 @@ export const PROJECTS_DATA = {
       title: "KILLZER Fight Club Web App",
       description: "A full-featured cloud web platform for martial arts academy management. Features a public landing page, interactive Admin, Coach, and Player dashboards with real-time Firebase Firestore, subscription tracking, and attendance management.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Firestore", "Framer Motion"],
-      imageUrl: "/img/killzer_logo.png",
+      imageUrl: "/img/killzer_screenshot.jpg",
       demoUrl: "https://killzer.com/",
       repoUrl: "https://github.com/Amer-07/killzer-fight-club-web"
     },
